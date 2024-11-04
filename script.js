@@ -118,19 +118,7 @@ function startTimer() {
 
 
 
-
-            // Testing part
-            console.log(noOfWords)
-            console.log(noOfChars)
-            console.log(arrayOfString)
-            console.log(arrayOfInput)
-            console.log("Right : ", right_words_count)
-            console.log("Rong : ", wrong_words_count)
-
-
-
-
-        }, 10000)
+        }, 60000)
 }
 
 
