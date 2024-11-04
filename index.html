@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test | Typing Speedometer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid ">
+          <span class="navbar-brand mb-0 h1">Typing Speedometer</span>
+        </div>
+      </nav>
+
+    
+    <div id="pcontainer" class="container text mt-4 mb-5">
+        <h5 id="mainText"></h5>
+    </div>
+
+    <div id="typing_input" class="typing_input container">
+
+        <div class="input-group flex-nowrap">
+            <input id="input_box" type="text" class="form-control" placeholder="Enter Above Text">
+          </div>
+
+          <h4 id="timer" class="mt-3 mb-3">00:00</h4>
+
+          <button onclick="startTimer()" id="start_btn" type="button" class="btn btn-success mt-3 ml-5">Start</button>
+
+    </div>
+
+
+    <div id="scontainer" style="visibility: hidden;" class="container text mt-4 mb-5">
+      <h1 id="mainText2" class="text-center">Time Up !!!</h1>
+
+
+      <table id="result_table"class="table table-bordered mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Typing Speed(W/m)</th>
+            <th scope="col">Typing Speed(C/m)</th>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Wrong Words</th>
+            <th scope="col">Right Words</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="wpm_text">Mark</td>
+            <td id="cpm_text">Mark3</td>
+            <td id="accuracy">Mark4</td>
+            <td id="wrong_words">Mark5</td>
+            <td id="right_words">Mark6</td>
+      
+          </tr> 
+        </tbody>
+      </table>
+
+    </div>
+
+
+    <script src="../static/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
